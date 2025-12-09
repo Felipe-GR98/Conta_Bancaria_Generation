@@ -1,10 +1,12 @@
-export class Conta{
+export abstract class Conta{
+  // atributos da classe
   private _numero : number;
   private _agencia : number;
   private _tipo : number;
   private _titular : string;
   private _saldo : number;
 
+  // construtor, permite instanciar essas variavei outros locais 
   constructor(numero : number, agencia : number, tipo : number, titular : string, saldo : number){
     this._numero = numero;
     this._agencia = agencia;
@@ -54,9 +56,11 @@ export class Conta{
     this._saldo = saldo;
   }
 
+  //metodos de especificos
   public sacar(valor: number): boolean{
     if(this._saldo < valor){
       console.log(`\n Saldo insuficiente`)
+      return false;
     }
     this._saldo = this._saldo - valor;
     return true;
