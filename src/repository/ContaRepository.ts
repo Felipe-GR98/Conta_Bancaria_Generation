@@ -1,6 +1,6 @@
 import { Conta } from "../model/Conta";
 
-export interface ContaRepisotort{
+export interface ContaRepisotory{
   // CRUD Conta
   procurarPorNumero(numero:number):void;
   listarTodas():void;
