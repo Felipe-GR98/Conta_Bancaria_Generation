@@ -1,8 +1,8 @@
 import { Conta } from "../model/Conta";
-import { ContaRepisotory } from "../repository/ContaRepository";
+import { ContaRepository } from "../repository/ContaRepository";
 import { colors } from "../util/Colors";
 
-export class ContaController implements ContaRepisotory{
+export class ContaController implements ContaRepository{
   
    private listarContas : Array<Conta> = new Array<Conta>();
     numero : number = 0

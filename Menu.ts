@@ -118,12 +118,12 @@ export function main() {
                     case 1:
                         console.log("Digite o limite da Conta (R$):")
                         limite = readlinesync.questionFloat("");
-                        contas.cadastrar(new ContaPoupanca(contas.gerarNumero(),agencia,tipo,titular,saldo,limite));
+                        contas.atualizar(new ContaPoupanca(numero,agencia,tipo,titular,saldo,limite));
                         break
                   case 2:
                     console.log("Digite o aniversario da Conta (R$):")
                         aniversario = readlinesync.questionInt("");
-                        contas.cadastrar(new ContaPoupanca(contas.gerarNumero(),agencia,tipo,titular,saldo,aniversario));
+                        contas.atualizar(new ContaPoupanca(numero,agencia,tipo,titular,saldo,aniversario));
                         break;
                 }
                 }else{
@@ -202,9 +202,9 @@ export function main() {
 /* Função com os dados da pessoa desenvolvedora */
 function sobre(): void {
     console.log("\n*****************************************************");
-    console.log("Projeto Desenvolvido por: ");
+    console.log("Projeto Desenvolvido por:Felipe Gonçalves Rodrigues");
     console.log("Generation Brasil - generation@generation.org");
-    console.log("github.com/conteudoGeneration");
+    console.log("github.com/Felipe-GR98");
     console.log("*****************************************************");
 }
 
