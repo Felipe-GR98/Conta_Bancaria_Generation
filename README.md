@@ -48,43 +48,6 @@ O projeto segue uma arquitetura organizada:
 ### Pré-requisitos
 Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
-### Passo a passo
-
-1.  **Clone o repositório**:
-    ```bash
-    git clone [https://github.com/Felipe-GR98/conta_bancaria_generation.git](https://github.com/Felipe-GR98/conta_bancaria_generation.git)
-    ```
-
-2.  **Instale as dependências**:
-    ```bash
-    npm install
-    ```
-
-3.  **Compile o TypeScript**:
-    Como o projeto está em TypeScript, é necessário transpilá-lo para JavaScript (verifique se a pasta `dist` foi criada ou configurada no `tsconfig.json`):
-    ```bash
-    npx tsc
-    ```
-
-4.  **Execute o projeto**:
-    Após compilar, execute o arquivo gerado (geralmente na pasta raiz ou dist):
-    ```bash
-    node Menu.js
-    # Ou, se estiver configurado para sair na pasta dist:
-    node dist/Menu.js
-    ```
-
-    *Dica: Você também pode adicionar um script "start" no seu `package.json` para facilitar.*
-
-## 🎨 Layout
-
-O menu interativo utiliza cores para melhor experiência do usuário:
-
-* **Amarelo**: Menus e destaques.
-* **Verde**: Mensagens de sucesso (Criação, Atualização, Transferência).
-* **Vermelho**: Mensagens de erro (Conta não encontrada, Saldo insuficiente).
-* **Branco**: Títulos das seções.
-
 ## 👨‍💻 Autor
 
 Desenvolvido por **Felipe Gonçalves Rodrigues**
